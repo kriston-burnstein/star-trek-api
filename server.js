@@ -1,7 +1,9 @@
+//Did this api with Mayan Wolfe streaming
+
 const express = require('express')
 const app = express()
 const cors = require('cors')
-const PORT = 8000
+const PORT = 8005
 
 app.use(cors())
 
@@ -78,5 +80,5 @@ app.get('/api/:alienName', (request, response) => {
 })
 
 app.listen(process.env.PORT || PORT, () => {
-    console.log('Server is running.')
+    console.log(`Server is running on port ${PORT}.`)
 })
